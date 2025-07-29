@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | My Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* LOGIN BOX */
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        /* LOGO inside login box */
+        .login-container img {
+            width: 345px; /* adjust logo size */
+            margin-bottom: 0.05%;
+        }
+
+        .login-container h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: #FFD700;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .login-container button:hover {
+            background: #FFC107;
+        }
+
+        .login-container a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo inside login box -->
+        <img src="https://iviqs.77t-tusu.com/entertainment77/c8022ax-oe%20e/ax-300x400c.gif" alt="My Logo">
+
+        <h2>欢迎光临</h2>
+        <form action="#">
+            <input type="text" placeholder="账户和邮箱" required>
+            <input type="password" placeholder="密码" required>
+            <button type="submit">登录</button>
+        </form>
+        <a href="#">忘记?</a>
+        <a href="#">创建新账户</a>
+    </div>
+</body>
+</html>

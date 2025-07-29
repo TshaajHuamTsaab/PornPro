@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>图片链接展示系统</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    img { width: 200px; margin: 10px; border-radius: 8px; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <h1>📸 粘贴图片链接</h1>
+  <input id="imgInput" placeholder="输入图片链接">
+  <button id="addBtn">➕ 添加图片</button>
+  <div id="gallery"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+  <script src="script.js"></script>
+  <div id="userBox" style="display:none; text-align:center;">
+  <h2>Welcome, <span id="userEmail"></span></h2>
+  <button onclick="logout()">Logout</button>
+</div>
+
+</body>
+</html>
